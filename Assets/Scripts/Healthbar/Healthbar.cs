@@ -1,17 +1,25 @@
-using System;
 using UnityEngine;
 
 public abstract class Healthbar : MonoBehaviour
 {
-    [SerializeField] private Health _health;
+    [SerializeField] protected Health PersonHealth;
 
-    // private void Start()
-    // {
-    //     ChangeValue();
-    // }
-    //
-    // private virtual ChangeValue()
-    // {
-    //     
-    // }
+    private void OnEnable()
+    {
+        PersonHealth.Changed += ChangeValue;
+    }
+
+    private void OnDisable()
+    {
+        PersonHealth.Changed -= ChangeValue;
+    }
+
+    private void Start()
+    {
+        ChangeValue();
+    }
+
+    protected virtual void ChangeValue()
+    {
+    }
 }

@@ -525,7 +525,6 @@ GameObject:
   - component: {fileID: 758004185}
   - component: {fileID: 758004187}
   - component: {fileID: 758004186}
-  - component: {fileID: 758004188}
   m_Layer: 5
   m_Name: Panel Healthbar
   m_TagString: Untagged
@@ -595,19 +594,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758004184}
   m_CullTransparentMesh: 1
---- !u!114 &758004188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758004184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc16bc61e0d7304f5b27feba3998e7fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _health: {fileID: 828122016}
 --- !u!1 &828122013
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 943230591}
   - component: {fileID: 943230592}
+  - component: {fileID: 943230593}
   m_Layer: 5
   m_Name: Slider Healthbar
   m_TagString: Untagged
@@ -876,6 +863,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &943230593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943230590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1963db3549b5f5e4d9ab5212abd5ca9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PersonHealth: {fileID: 828122016}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,6 +1406,7 @@ GameObject:
   - component: {fileID: 1695129912}
   - component: {fileID: 1695129914}
   - component: {fileID: 1695129913}
+  - component: {fileID: 1695129915}
   m_Layer: 5
   m_Name: Text Healthbar
   m_TagString: Untagged
@@ -1529,6 +1530,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695129911}
   m_CullTransparentMesh: 1
+--- !u!114 &1695129915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695129911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b3f0b4d11cb5eec2a3ed7a8d4416872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PersonHealth: {fileID: 828122016}
 --- !u!1 &1737409610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,6 +1553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1737409611}
   - component: {fileID: 1737409612}
+  - component: {fileID: 1737409613}
   m_Layer: 5
   m_Name: Slider Smooth Healthbar
   m_TagString: Untagged
@@ -1618,6 +1633,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1737409613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737409610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a5edd9b62a9c9ea3b2628953ad373cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PersonHealth: {fileID: 828122016}
 --- !u!1 &1755292562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,6 +1855,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a63b6d3900eb9f0bbe3ef259712e56f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PersonHealth: {fileID: 828122016}
+  Amount: 30
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
