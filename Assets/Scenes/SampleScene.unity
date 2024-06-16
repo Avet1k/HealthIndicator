@@ -980,6 +980,7 @@ GameObject:
   - component: {fileID: 1445615840}
   - component: {fileID: 1445615839}
   - component: {fileID: 1445615838}
+  - component: {fileID: 1445615841}
   m_Layer: 5
   m_Name: Button Heal
   m_TagString: Untagged
@@ -1089,6 +1090,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1445615836}
   m_CullTransparentMesh: 1
+--- !u!114 &1445615841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445615836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc411dcbeec09fa983ed521475021f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PersonHealth: {fileID: 828122016}
+  Amount: 25
 --- !u!1 &1598787585
 GameObject:
   m_ObjectHideFlags: 0

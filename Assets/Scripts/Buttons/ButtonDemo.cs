@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
-public class ButtonDemo : MonoBehaviour
+public abstract class ButtonDemo : MonoBehaviour
 {
     [SerializeField] protected Health PersonHealth;
     [SerializeField] protected int Amount;
@@ -24,7 +24,5 @@ public class ButtonDemo : MonoBehaviour
         ButtonAction.onClick.RemoveListener(Action);
     }
 
-    protected virtual void Action()
-    {
-    }
+    protected abstract void Action();
 }

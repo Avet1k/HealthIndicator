@@ -19,7 +19,5 @@ public abstract class Healthbar : MonoBehaviour
         ChangeValue();
     }
 
-    protected virtual void ChangeValue()
-    {
-    }
+    protected abstract void ChangeValue();
 }
